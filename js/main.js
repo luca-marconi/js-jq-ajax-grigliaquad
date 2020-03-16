@@ -13,7 +13,6 @@
                         $(clicked).addClass('green');
                         $(clicked).text(numeroRandom);
                     }
-
             },
             error: function() {
             }
