@@ -1,4 +1,7 @@
-    $('.square').click(function() {
+    var sourceSquare = $('#square-template').html();
+    var templateSquare = Handlebars.compile(sourceSquare);
+
+    $('#grid').on('click', '.square', function() {
         var clicked = $(this);
         if ((clicked.hasClass('yellow')) || (clicked.hasClass('green'))) {
             alert('hai già cliccato questo quadrato');
@@ -15,8 +18,10 @@
                 }
             });
         }
-
     });
+    for (var i = 0; i < 36; i++) {
+        $('#grid').append(templateSquare);
+    };
 
     function myFunction(numeroRandom, clicked) {
         if (numeroRandom <= 5) {

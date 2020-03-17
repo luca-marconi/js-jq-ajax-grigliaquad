@@ -6,11 +6,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div id="grid">
+				<!-- <div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
@@ -45,10 +47,12 @@
 				<div class="square"></div>
 				<div class="square"></div>
 				<div class="square"></div>
-				<div class="square"></div>
-				<div class="square"></div>
-			</div>	
+				<div class="square"></div> -->
+			</div>
 		</div>
+		<script id="square-template" type="text/x-handlebars-template">
+			<div class="square"></div>
+		</script>
 
 		<script src="js/main.js"></script>
 	</body>
